@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <title>Shoe Store</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <navbar class="navbar">
+      <div class="navbar-center">
+        <span class="nav-icon"><i class="fas fa-home"></i> </span>
+        <div class="nav-yazi"><h2>Shoe Store</h2></div>
+        <div class="cart-btn">
+          <span><i class="fas fa-shopping-cart"></i> </span>
+          <div class="cart-amount">0</div>
+        </div>
+      </div>
+    </navbar>
+    <!-- navbar end -->
+    <!-- welcome -->
+    <div class="welcome">
+      <div class="background-white">
+        <h2 class="welcome-text">Welcome to the Shoe Store</h2>
+        <button class="start show">Click to Start Shopping</button>
+      </div>
+    </div>
+    <!-- welcome end -->
+    <!-- grid -->
+    <div class="content-box">
+      <div class="content-headline"><h2 id="Shoe">Available Shoes</h2></div>
+      <div class="content-cell"></div>
+    </div>
+    <!-- grid end -->
+    <!-- Cart start -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <span class="close-btn"> <i class="fas fa-window-close"></i> </span>
+        <h2>Your Shopping Cart</h2>
+        <div class="cart-item"></div>
+
+        <div class="cart-footer">
+          <h2>Your Total : <span class="cart-total">$153</span></h2>
+          <button class="cart-clear start">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- Cart end -->
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

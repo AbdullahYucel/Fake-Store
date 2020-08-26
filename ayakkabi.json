@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "title": "Grey Sneaker",
+      "price": 75.99,
+      "image": "./images/ayakkabi-1.png"
+    },
+    {
+      "id": "2",
+      "title": "Green Outdoor Boot",
+      "price": 90.99,
+      "image": "./images/ayakkabi-2.png"
+    },
+    {
+      "id": "3",
+      "title": "Grey-Orange Outdoor",
+      "price": 85.25,
+      "image": "./images/ayakkabi-3.png"
+    },
+    {
+      "id": "4",
+      "title": "Winter Boot",
+      "price": 72.45,
+      "image": "./images/ayakkabi-4.png"
+    },
+    {
+      "id": "5",
+      "title": "Winter Outdoor Waterproof Boot",
+      "price": 110.5,
+      "image": "./images/ayakkabi-5.png"
+    },
+    {
+      "id": "6",
+      "title": "Summer Air Outdoor",
+      "price": 95.75,
+      "image": "./images/ayakkabi-6.png"
+    },
+    {
+      "id": "7",
+      "title": "Walking Talkie",
+      "price": 67.25,
+      "image": "./images/ayakkabi-7.png"
+    },
+    {
+      "id": "8",
+      "title": "Sunny Day Sneaker",
+      "price": 59.5,
+      "image": "./images/ayakkabi-8.png"
+    }
+  ]
+}

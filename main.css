@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: bisque;
+  z-index: 1;
+}
+.nav-icon {
+  cursor: pointer;
+}
+.navbar-center {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+}
+.cart-btn {
+  position: relative;
+  cursor: pointer;
+}
+.cart-amount {
+  position: absolute;
+  top: -15px;
+  right: -7px;
+  background: rgb(201, 7, 0);
+  color: rgb(255, 255, 255);
+  padding: 0.08rem 0.4rem;
+  border-radius: 40%;
+}
+
+span i {
+  font-size: 2rem;
+}
+.nav-yazi {
+  font-size: 2rem;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./images/back.jpg') center/cover no-repeat;
+  min-height: calc(100vh - 70px);
+}
+.background-white {
+  background-color: rgba(177, 229, 236, 0.5);
+  display: inline-block;
+  text-align: center;
+  padding: 5rem;
+  border-radius: 25px;
+}
+.welcome-text {
+  background: rgb(7, 6, 6, 0.5);
+  border-radius: 25px;
+  color: rgb(251, 255, 0);
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  padding: 20px 50px;
+}
+.start {
+  padding: 2rem 5rem;
+  margin-top: 35px;
+  background-color: rgb(228, 90, 26);
+  text-transform: uppercase;
+  font-size: 2rem;
+  border: 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.content-box {
+  padding: 4rem 0;
+}
+.content-headline h2 {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+}
+.content-cell {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+.basket-button {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0.75rem;
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  font-size: 15px;
+  background: rgb(240, 177, 106);
+  transform: translateX(101%);
+}
+.basket-button:hover {
+  background: bisque;
+}
+.fa-shopping-cart {
+  margin-right: 0.5rem;
+}
+.image-container:hover .basket-button {
+  transform: translateX(0);
+}
+.shoe-image {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  display: block;
+  transition: all 0.3s ease-out;
+}
+.image-container:hover {
+  /* opacity: 0.5; */
+  transition: all 0.3s ease-out;
+}
+.products h3 {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.products h4 {
+  margin-top: 0.7rem;
+  color: #e45a1a;
+  text-align: center;
+}
+
+.cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 2;
+  background: rgba(255, 228, 196, 0.5);
+  visibility: hidden;
+}
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 3;
+  background: rgb(240, 157, 81);
+  padding: 1.5rem;
+  transition: all 0.3s ease-out;
+  transform: translateX(101%);
+}
+
+.show-cart {
+  transform: translateX(0);
+}
+.transparentBcg {
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+
+.close-btn {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+.cart h2 {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.cart-content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.cart-content img {
+  width: 100px;
+  height: 100px;
+}
+.cart-content h4 {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+.cart-content h5 {
+  margin: 0.5rem 0;
+}
+.amount {
+  text-align: center;
+}
+.remove {
+  color: grey;
+  cursor: pointer;
+}
+.fa-chevron-up,
+.fa-chevron-down {
+  cursor: pointer;
+  color: black;
+}
+
+.cart-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+.cart-footer h2 span {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
