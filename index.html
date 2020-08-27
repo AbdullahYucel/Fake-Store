@@ -10,6 +10,20 @@
       integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
       crossorigin="anonymous"
     />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-176583103-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-176583103-2');
+    </script>
     <title>Shoe Store</title>
   </head>
   <body>
@@ -29,7 +43,7 @@
     <div class="welcome">
       <div class="background-white">
         <h2 class="welcome-text">Welcome to the Shoe Store</h2>
-        <button class="start show">Click to Start Shopping</button>
+        <button class="start show">Start Shopping</button>
       </div>
     </div>
     <!-- welcome end -->
